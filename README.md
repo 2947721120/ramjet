@@ -3,12 +3,12 @@
 ![ramjet](https://cloud.githubusercontent.com/assets/1162160/7279487/5d668dea-e8ea-11e4-9b0d-a9ba2f1165cc.gif)
 
 
-## Installation
+## 安装
 
-`npm install ramjet`, or download [ramjet.js](http://www.rich-harris.co.uk/ramjet/ramjet.js).
+`npm install ramjet`, 或下载[ramjet.js](http://www.rich-harris.co.uk/ramjet/ramjet.js).
 
 
-## Quick start
+## 快速使用
 
 ```html
 <div id='a' style='background-color: red; font-size: 4em; padding: 1em;'>a</div>
@@ -19,22 +19,22 @@
   var element1 = document.getElementById('a'),
       element2 = document.getElementById('b');
 
-  // to repeat, run this from the console!
+  //重复，从控制台运行此
   ramjet.transform( element1, element2 );
 </script>
 ```
 
 
-## Okay, so... what does this do?
+## 好了，所以......这是什么呢？
 
-Ramjet makes it look like your DOM elements are capable of transforming into one another. It does this by cloning the elements (and all their children), transforming the second element (the one we're transforming *to*) so that it completely overlaps with the first, then animating the two elements together until the first element (the one we're transitioning *from*) has exactly the same position and dimensions as the second element originally did.
+冲压发动机使它看起来像你的DOM元素都能够转化成另一个。它通过克隆的元素（和他们的孩子），转化的第二个元素（我们改变一个做到这一点 *to*) 使其完全与第一重叠，然后动画两个元件一起，直到第一元件（我们转换所述一个 *from*)有完全一样的位置和尺寸，作为第二个元素。
 
-It's basically the same technique used in iOS 8 to make it appear as though each app lives inside its icon.
+它基本上是用于iOS 8看起来好像每个应用程序在其图标相同的技术。
 
 ![ios8-effect](https://cloud.githubusercontent.com/assets/1162160/7281378/4f949858-e8f7-11e4-8acf-9a1d90049a92.gif)
 
-In modern browsers, it uses CSS animations, so everything happens off the main thread. The result is **buttery-smooth performance**, even on mobile devices.
-
+在现代的浏览器，它使用CSS动画，所以一切都发生在主线程。结果是
+**buttery-smooth performance**, 即使在移动设备上。
 
 ## API
 
@@ -53,11 +53,10 @@ In modern browsers, it uses CSS animations, so everything happens off the main t
 
 ### ramjet.hide( ...nodes )
 
-Convenience function that sets the opacity of each node to 0 (temporarily disabling any transition that might otherwise interfere).
-
+方便的功能，用于设置每个节点的不透明度为0（临时禁用任何过渡，否则可能会干扰）。
 ### ramjet.show( ...nodes )
 
-Opposite of `ramjet.hide`.
+与之相对 `ramjet.hide`.
 
 ### ramjet.linear, ramjet.easeIn, ramjet.easeOut, ramjet.easeInOut
 
